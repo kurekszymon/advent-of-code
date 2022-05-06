@@ -1,0 +1,28 @@
+{
+	"Start challenge": {
+		"scope": "javascript",
+		"prefix": "start",
+		"body": [
+			"const input = require('fs').readFileSync('./$1.txt', {encoding: 'utf-8'}).split('$2');\n",
+			"console.log(input);\n",
+			"const result = input.$3(x => $4);",
+			"\n\n\nconsole.log(result)"
+		]
+	},
+
+	"ArrReduce": {
+		"scope": "javascript",
+		"prefix": "arrreduce",
+		"body": [
+			"$1.reduce((acc, curr) => acc + curr, 0);"
+		]
+	},
+
+	"ArrMap": {
+		"scope": "javascript",
+		"prefix": "arrmap",
+		"body": [
+			"$1.map((x, i) => $2x);"
+		]
+	}
+}
