@@ -5,7 +5,7 @@
 		"body": [
 			"const input = require('fs').readFileSync('./$1.txt', {encoding: 'utf-8'}).split('$2');\n",
 			"console.log(input);\n",
-			"const result = input.$3(x => $4);",
+			"const result = input.$3map(x => $4x);",
 			"\n\n\nconsole.log(result)"
 		]
 	},
